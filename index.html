@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD - Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h5>Employe</h5>
+    </div>
+    <div class="upper-btn-box">
+        <div class="btn-left">
+           <button id="add-btn"> <i class="fa fa-plus"></i> Add Employe</i></button>
+           <button> <i class="fa fa-eraser"></i> Clear filtering</i></button>
+            </div>
+        <div class="btn-right">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Enter Employee ">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- ___________________________Table Content____________________ -->
+    
+    <div class="table-container">
+        <table width="100%" rules="all" >
+            <tr>
+                <th>Sr NO</th>
+                <th>Profile</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Office Code</th>
+                <th>Job Title</th>
+                <th>Action</th>
+            </tr>
+           
+            <tbody id="table_data">
+
+            </tbody>
+        
+         </table>
+     </div>
+
+     <!-- ______________________________________Employe Page____________________________ -->
+     
+     <div class="info-page">
+        <i class="fa fa-times circle close-icon" id="close_icon"></i>
+
+        <div class="left-info">
+            <div class="input">
+            <input type="file"  id="upload-file">
+            <i class="fa fa-plus" id="plus"></i>
+            </div>
+            <img src="./icon.png" id="profile-pic">
+            
+        </div>
+        <div class="right-info">
+            
+            <form id="register_form">
+                <div class="input-box">
+                    <label for="id">Id:</label>
+                    <input type="text" id="id">
+                </div>
+                <div class="input-box">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input-box">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="input-box">
+                    <label for="ofc">Office code:</label>
+                    <input type="text" id="ofc">
+                </div>
+                <div class="input-box">
+                    <label for="job">Job Tittle:</label>
+                    <input type="text" id="job">
+                </div>
+    
+            </form>
+            <div class="btn-box">
+                <button id="register-btn">Register</button>
+                <button class="btn-2">Update</button>
+            </div>
+        </div>
+     </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
